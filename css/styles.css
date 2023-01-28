@@ -126,26 +126,29 @@ $media_mobile-max: 767px;*/
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .recipe {
     grid-template-columns: minmax(100%, 1fr);
-    max-width: 90%;
+    width: 90%;
     align-content: space-around;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .recipe {
-    grid-template-columns: repeat(1, minmax(100%, 1fr));
-    max-width: 800px;
+    grid-template-columns: minmax(100%, 1fr);
+    width: 90%;
+    align-content: space-around;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
   .recipe {
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
-    max-width: 1200px;
+    grid-template-columns: minmax(100%, 1fr);
+    width: 70%;
+    align-content: space-around;
   }
 }
 @media screen and (min-width: 1920px) {
   .recipe {
-    grid-template-columns: repeat(2, minmax(50%, 1fr));
-    max-width: 1200px;
+    grid-template-columns: minmax(100%, 1fr);
+    width: 50%;
+    align-content: space-around;
   }
 }
 .recipe figure {
@@ -180,6 +183,7 @@ $media_mobile-max: 767px;*/
   display: block;
   max-width: 100%;
   height: auto;
+  align-items: center;
 }
 .recipe figure figcaption {
   position: relative;
@@ -189,17 +193,28 @@ $media_mobile-max: 767px;*/
   color: white;
   background-color: rgba(8, 8, 8, 0.7);
   height: 2rem;
+  width: auto;
 }
 .recipe h3 {
+  font-size: 2rem;
+  color: black;
+}
+.recipe h4 {
   font-size: 1.2rem;
-  color: red;
+  color: black;
 }
 .recipe h5 {
   font-size: 0.8rem;
-  color: red;
+  color: rgb(30, 30, 30);
+  margin-bottom: 1rem;
 }
 .recipe p {
+  display: block;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.recipe strong {
+  display: block;
 }
 
 .grid {

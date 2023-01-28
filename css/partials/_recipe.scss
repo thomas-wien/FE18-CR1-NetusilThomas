@@ -15,23 +15,26 @@
 
     @media screen and (min-width: $media_mobile-min) and (max-width: $media_mobile-max) {
         grid-template-columns: minmax(100%, 1fr);
-        max-width: 90%;
+        width: 90%;
         align-content: space-around;
     }
 
     @media screen and (min-width: $media_tablet-min) and (max-width: $media_tablet-max) {
-        grid-template-columns: repeat(1, minmax(100%, 1fr));
-        max-width: 800px;
+        grid-template-columns: minmax(100%, 1fr);
+        width: 90%;
+        align-content: space-around;
     }
 
     @media screen and (min-width: $media_laptop-min) and (max-width: $media_laptop-max) {
-        grid-template-columns: repeat(2, minmax(calc(100%/2), 1fr));
-        max-width: 1200px;
+        grid-template-columns: minmax(100%, 1fr);
+        width: 70%;
+        align-content: space-around;
     }
 
     @media screen and (min-width: $media_monitor-uhd-min) {
-        grid-template-columns: repeat(2, minmax(calc(100%/2), 1fr));
-        max-width: 1200px;
+        grid-template-columns: minmax(100%, 1fr);
+        width: 50%;
+        align-content: space-around;
     }
 
 
@@ -64,6 +67,7 @@
             display: block;
             max-width: 100%;
             height: auto;
+            align-items: center;
         }
 
         figcaption {
@@ -74,23 +78,34 @@
             color: white;
             background-color: rgba(8, 8, 8, .7);
             height: 2rem;
+            width: auto;
         }
     }
 
     h3 {
+        font-size: 2rem;
+        color: black;
+    }
+
+    h4 {
         font-size: 1.2rem;
-        color: red;
+        color: black;
     }
 
     h5 {
         font-size: .8rem;
-        color: red;
+        color: rgb(30, 30, 30);
+        margin-bottom: 1rem;
     }
 
     p {
+        display: block;
         font-size: 1rem;
+        margin-bottom: .5rem;
     }
 
-
+    strong {
+        display: block;
+    }
 
 }
