@@ -5,7 +5,8 @@ header nav ul {
     margin: 0;
     justify-content: space-between;
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: .8rem;
+    flex-wrap: wrap;
 
     li {
         text-align: center;

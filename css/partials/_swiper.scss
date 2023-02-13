@@ -1,0 +1,33 @@
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
+    }
+
+    figcaption {
+      position: relative;
+      top: -2rem;
+      font-size: .6rem;
+      text-align: center;
+      color: white;
+      background-color: rgba(8, 8, 8, .7);
+      height: 2rem;
+    }
